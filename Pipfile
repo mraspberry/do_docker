@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = "3.9"
+
+[packages]
+python-digitalocean = "~=1.15.0"
+black = "*"
+
+[dev-packages]
+flit = "~=3.2.0"
+pre-commit = "*"
+
+[pipenv]
+allow_prereleases = true

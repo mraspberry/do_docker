@@ -1,0 +1,13 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "do_docker"
+author = "Matthew Raspberry"
+author-email = "3092450+mraspberry@users.noreply.github.com"
+description-file = "README.md"
+requires = [ "python-digitalocean" ]
+
+[tool.flit.scripts]
+do_docker = "do_docker.__main__:main"
