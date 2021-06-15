@@ -1,0 +1,21 @@
+# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Python package
+
+on:
+  pull_request:
+    branches: [ master ]
+    types: [open, reopen]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Automerge dependabot PRs
+      uses: mraspberry/dependabot-automerge-action@v2
+      with:
+        test-command: true
