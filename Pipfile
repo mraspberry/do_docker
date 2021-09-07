@@ -11,7 +11,7 @@ python-digitalocean = "~=1.16.0"
 black = "*"
 
 [dev-packages]
-flit = "~=3.2.0"
+flit = "~=3.3.0"
 pre-commit = "*"
 
 [pipenv]
