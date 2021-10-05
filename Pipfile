@@ -7,7 +7,7 @@ name = "pypi"
 python_version = "3.9"
 
 [packages]
-python-digitalocean = "~=1.16.0"
+python-digitalocean = "~=1.17.0"
 black = "*"
 
 [dev-packages]
